@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvw82ktru1e28"]
+
+[ext_resource type="Texture2D" uid="uid://vuajnp75jddc" path="res://ASSET(art)/Chess_board.png" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://dp58onsgqyecq" path="res://Asset(script)/merge_script.gd" id="2_uu6xs"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(72, -72)
+zoom = Vector2(4, 4)
+
+[node name="Board" type="Sprite2D" parent="."]
+position = Vector2(72, -72)
+texture = ExtResource("1_glv2v")
+script = ExtResource("2_uu6xs")
